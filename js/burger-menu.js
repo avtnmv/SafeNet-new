@@ -1,6 +1,7 @@
 const burgerMenu = document.getElementById("burger-menu");
 const burgerIcon = document.getElementById("burger-icon");
-const burgerLinks = document.querySelectorAll('.burger-menu a');
+// Получаем все ссылки в бургер меню, исключая ссылки из выпадающего меню
+const burgerLinks = document.querySelectorAll('.burger-menu a:not(.burger-dropdown-link)');
 
 const toggleMenu = () => {
   const show = !burgerMenu.classList.contains('show');
@@ -10,4 +11,25 @@ const toggleMenu = () => {
 };
 
 burgerIcon.addEventListener('click', toggleMenu);
-burgerLinks.forEach(link => link.addEventListener('click', () => toggleMenu(false)));
+
+// Закрываем бургер меню при клике на обычные ссылки
+burgerLinks.forEach(link => {
+    link.addEventListener('click', () => toggleMenu(false));
+});
+
+// Закрываем бургер меню при клике на ссылки в выпадающем меню
+const dropdownLinks = document.querySelectorAll('.burger-dropdown-link');
+dropdownLinks.forEach(link => {
+    link.addEventListener('click', () => toggleMenu(false));
+});
+
+// Close burger menu on window resize (desktop/mobile switch)
+window.addEventListener('resize', () => {
+    if (window.innerWidth > 1124) {
+        if (burgerMenu.classList.contains('show')) {
+            burgerMenu.classList.remove('show');
+            burgerIcon.classList.remove('active');
+            document.body.classList.remove('no-scroll');
+        }
+    }
+});
