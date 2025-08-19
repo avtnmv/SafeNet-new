@@ -408,6 +408,7 @@ body{
     margin-top: 140px;
     text-align: left;
     padding-inline: clamp(24px, 2vw, 64px);
+    margin-bottom: 50px;
 }
 
 
@@ -572,8 +573,7 @@ body{
 }
 
 .no-scroll {
-    overflow-x: hidden;
-    overflow-y: auto;
+    overflow: hidden;
 }
 
 .burger-dropdown-link {
