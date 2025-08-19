@@ -27,7 +27,7 @@
 
             <nav class="nav">
                 <ul class="nav-list">
-                    <li class="nav-item nav-item-active">
+                    <li class="nav-item nav-item-active dropdown" id="dropdown-trigger">
                         <div class="nav-item-line-container">
                             <span class="nav-item-line"></span>
                             <span class="nav-item-line"></span>
@@ -42,21 +42,56 @@
                 </ul>
             </nav>
 
-                <div class="cta-btn-container">
-                    <a href="#" class="cta-btn">Отримати консультацію</a>
-                </div>
+            <!-- Dropdown Menu -->
+            <div class="dropdown-menu" id="dropdown-menu">
+                <ul>
+                    <li><a href="#" class="dropdown-link">Аудит та аналіз кібербезпеки</a></li>
+                    <li><a href="#" class="dropdown-link">Технічне обстеження</a></li>
+                    <li><a href="#" class="dropdown-link">Захист корпоративних мереж</a></li>
+                    <li><a href="#" class="dropdown-link">Навчання персоналу та консультації</a></li>
+                    <li><a href="#" class="dropdown-link">Захист веб-додатків і сайтів</a></li>
+                    <li><a href="#" class="dropdown-link">Реагування на інциденти та кризові ситуації</a></li>
+                </ul>
+            </div>
+
+                            <div class="cta-btn-container">
+                <a href="#" class="cta-btn">Отримати консультацію</a>
+            </div>
+
+            <!-- Burger Menu -->
+            <div class="burger-menu" id="burger-menu">
+                <ul>
+                    <li class="burger-link"><a href="#about">Про нас</a></li>
+                    <div class="burger-hr"></div>
+                    <li class="burger-link"><a href="#all-products">Всі послуги</a></li>
+                    <div class="burger-hr"></div>
+                    <li class="burger-link"><a href="#faq">Питання</a></li>
+                    <div class="burger-hr"></div>
+                    <li class="burger-link"><a href="#contacts">Контакти</a></li>
+                </ul>
+            </div>
+
+            <div class="burger-icon" id="burger-icon">
+                <div class="burger-stick"></div>
+                <div class="burger-stick"></div>
+            </div>
             </div>
             
                 <div class="header-content">
                     <h1 class="header-title"> SafeNet Security</h1>
                     <p class="header-description">Кібер та технічна безпека</p>
-                    <p class="header-description-text">Ми допомагаємо компаніям запобігати витокам даних, хакерським атакам та шпигунству. Дійте на випередження— замовте аудит безпеки вже сьогодні!</p>
-                    <a href="#" class="header-cta-btn">
-                        Отримати консультацію
-                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#a)"><path d="M8 8v2.667h11.453L6.667 23.453l1.88 1.88 12.786-12.786V24H24V8z" fill="#fff"/></g><defs><clipPath id="a"><path fill="#fff" d="M0 0h32v32H0z"/></clipPath></defs></svg>
-                    </a>
+                    <p class="header-description-text">Ми допомагаємо компаніям запобігати витокам даних, хакерським атакам та шпигунству. Дійте на випередження — замовте аудит безпеки вже сьогодні!</p>
+
+                    <div class="header-cta-btn-container">
+                        <a href="#" class="header-cta-btn header-cta-btn-hero">
+                            Отримати консультацію
+                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#a)"><path d="M8 8v2.667h11.453L6.667 23.453l1.88 1.88 12.786-12.786V24H24V8z" fill="#fff"/></g><defs><clipPath id="a"><path fill="#fff" d="M0 0h32v32H0z"/></clipPath></defs></svg>
+                        </a>
+                    </div>
                 </div>
 
     </header>
+    <script src="./js/burger-menu.js"></script>
+    <script src="./js/dropdown-menu.js"></script>
 </body>
 </html>
