@@ -11,13 +11,12 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="video-background">
-        <video autoplay muted loop playsinline>
-            <source src="./video/hero-video.mp4" type="video/mp4">
-        </video>
-    </div>
-
     <header class="header container">
+        <div class="video-background">
+            <video autoplay muted loop playsinline>
+                <source src="./video/hero-video.mp4" type="video/mp4">
+            </video>
+        </div>
         <div class="header-container">
             <div class="logo">
                 <div class="logo-container">
@@ -130,6 +129,14 @@
                 </div>
 
     </header>
+
+    <main class="main container">
+        <section class="who-we-are">
+            <h2 class="who-we-are__title">Хто ми і як запобігаємо загрозам — історія за 3 хвилини</h2>
+            
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/dF1P41UDSR0" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
+        </section>
+    </main>
     <script src="./js/burger-menu.js"></script>
     <script src="./js/dropdown-menu.js"></script>
 </body>

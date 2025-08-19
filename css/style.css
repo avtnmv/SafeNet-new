@@ -7,6 +7,14 @@
 }
 @font-face {
     font-family: 'TT Autonomous Mono Trl';
+    src: url('../fonts/TTAutonomousMonoTrl-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'TT Autonomous Mono Trl';
     src: url('../fonts/TTAutonomousMonoTrl-Medium.woff2') format('woff2');
     font-weight: 500;
     font-style: normal;
@@ -15,17 +23,24 @@
 
 :root{
     --container-width: 1784px;
-    --paragraph-size: font-size: clamp(16px, 2vw, 18px);
     --font-heading: 'TT Autonomous Mono Trl', sans-serif;
     --font-paragraph: 'Inter', sans-serif;
     --font-weight-paragraph-regular: 400;
     --font-weight-paragraph-medium: 500;
+    --font-weight-heading-regular: 400;
+    --font-weight-heading-medium: 500;
 
+    --font-size-heading-h2: clamp(46px, 6vw, 80px);
+    --paragraph-size: font-size: clamp(16px, 2vw, 18px);
 
     --color-white: #fff;
     --color-white-opacity-50: rgba(255, 255, 255, 0.5);
     --color-white-opacity-80: rgba(255, 255, 255, 0.8);
     --color-gray: #CBCBCB;
+}
+html{
+    background-color: #060E1E;
+    scroll-behavior: smooth;
 }
 
 
@@ -37,11 +52,11 @@ body{
 
 /* Video Background Styles */
 .video-background {
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
-    height: 100vh;
+    height: 100%;
     z-index: -1;
     overflow: hidden;
 }
@@ -93,6 +108,7 @@ body{
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+    position: relative;
 }
 .header-container{
     margin-top: 32px;
@@ -262,7 +278,7 @@ body{
 }
 
 .header-content {
-    position: fixed;
+    position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -275,17 +291,16 @@ body{
 
 .header-title {
     font-family: var(--font-heading);
-    font-weight: 500;
+    font-weight: var(--font-weight-heading-medium);
     color: var(--color-white);
     margin-bottom: clamp(24px, calc(32px - 0.574vw), 32px);
-
     line-height: 100%;
-    font-family: var(--font-heading);
     font-size: clamp(66px, calc(65px + (93 * ((100vw - 320px) / 1400))), 161px);
 }
 
 .header-description {
     font-family: var(--font-heading);
+    font-weight: var(--font-weight-heading-medium);
     font-size: clamp(33px, 2.5vw, 38px);
     color: var(--color-white);
     margin-bottom: 16px;
@@ -584,6 +599,41 @@ body{
     min-height: 10px !important;
     max-width: 7px !important;
     max-height: 10px !important;
+}
+
+/* Main Content */
+.main {
+    padding-top: clamp(64px, 8vw, 128px);
+    padding-bottom: clamp(64px, 8vw, 128px);
+}
+
+/* Who We Are Section */
+.who-we-are {
+    text-align: center;
+}
+
+
+
+.who-we-are iframe {
+    width: 100%;
+    max-width: 1140px;
+    height: auto;
+    aspect-ratio: 1140 / 600;
+    border-radius: 20px;
+    border: none;
+}
+
+.who-we-are__title{
+    font-size: var(--font-size-heading-h2);
+    font-family: var(--font-heading);
+    font-weight: var(--font-weight-heading-medium);
+    max-width: 1530px;
+    text-align: center;
+    margin-inline: auto;
+    color: var(--color-white);
+    margin-bottom: clamp(32px, 4vw, 64px);
+    line-height: 100%;
+    text-transform: uppercase;
 }
 
 @media (max-width: 1215px) {
