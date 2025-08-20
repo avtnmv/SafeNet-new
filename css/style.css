@@ -1065,6 +1065,12 @@ body{
     z-index: 1;
 }
 
+/* Devices Section */
+.devices {
+    max-width: var(--container-width);
+    padding-inline: clamp(24px, 5vw, 64px);
+}
+
 /* Devices Header */
 .devices__header {
     display: flex;
@@ -1131,7 +1137,7 @@ body{
 }
 
 .devices-slider .swiper {
-    overflow: visible;
+    overflow: hidden;
     padding-bottom: 50px;
 }
 
@@ -1233,7 +1239,8 @@ body{
 
 
 @media (max-width: 1215px) {
-    .container{
+    .container,
+    .devices{
         padding-inline: 24px;
     }
     .advantages__cards{
@@ -1265,6 +1272,11 @@ body{
     
     .burger-icon {
         display: flex;
+    }
+    
+    .devices__card{
+        height: auto;
+        gap: 48px;
     }
 
 }
@@ -1299,14 +1311,9 @@ body{
         align-items: center;
     }
 
-    .devices__header {
-        flex-direction: column;
-        gap: 24px;
-        align-items: center;
-    }
 
-    .devices__title {
-        text-align: center;
+    .devices__card{
+        height: 445px;
     }
 
 
@@ -1334,6 +1341,22 @@ body{
     }
     .our-mission__header{
         display: none;
+    }
+    .devices__card-text{
+        max-width: 165px;
+    }
+    .devices__header{
+        margin-bottom: 32px;
+    }
+    .devices__header {
+        flex-direction: column;
+        gap: 24px;
+        align-items: center;
+    }
+
+    .devices__title {
+        text-align: center;
+        margin-bottom: 0px;
     }
 }
 /* For devices with portrait orientation */
