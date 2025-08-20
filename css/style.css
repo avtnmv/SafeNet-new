@@ -1332,6 +1332,9 @@ body{
         width: 40px !important;
         height: 40px !important;
     }
+    .our-mission__header{
+        display: none;
+    }
 }
 /* For devices with portrait orientation */
 @media (orientation: portrait) {
