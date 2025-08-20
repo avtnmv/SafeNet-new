@@ -672,6 +672,13 @@ body{
     will-change: contents;
     backface-visibility: hidden;
     -webkit-backface-visibility: hidden;
+    transform: translateZ(0);
+    -webkit-transform: translateZ(0);
+    /* Дополнительные оптимизации для Safari */
+    perspective: 1000px;
+    -webkit-perspective: 1000px;
+    transform-style: preserve-3d;
+    -webkit-transform-style: preserve-3d;
 }
 
 .our-mission__card-description {
