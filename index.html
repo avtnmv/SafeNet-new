@@ -1,10 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uk">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Safe Net</title>
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -60,9 +61,9 @@
             <!-- Burger Menu -->
             <div class="burger-menu" id="burger-menu">
                 <ul>
-                    <div class="burger-hr"></div>
+                    <li class="burger-hr"></li>
                     <li class="burger-link"><a href="#about">Про нас</a></li>
-                    <div class="burger-hr"></div>
+                    <li class="burger-hr"></li>
                     <li class="burger-link burger-dropdown" id="burger-dropdown-trigger">
                         <div class="burger-nav-item-container">
                             <div class="burger-nav-item-line-container">
@@ -101,11 +102,11 @@
                             </ul>
                         </div>
                     </li>
-                    <div class="burger-hr"></div>
+                    <li class="burger-hr"></li>
                     <li class="burger-link"><a href="#faq">Питання</a></li>
-                    <div class="burger-hr"></div>
+                    <li class="burger-hr"></li>
                     <li class="burger-link"><a href="#contacts">Контакти</a></li>
-                    <div class="burger-hr"></div>
+                    <li class="burger-hr"></li>
                 </ul>
             </div>
 
@@ -133,7 +134,7 @@
     <main class="main container">
         <section class="who-we-are">
             <h2 class="who-we-are__title">Хто ми і як запобігаємо загрозам — історія за 3 хвилини</h2>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/dF1P41UDSR0" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/dF1P41UDSR0" title="YouTube video player" allowfullscreen></iframe>
         </section>
 
         <section class="our-mission">
@@ -339,17 +340,112 @@
                     <h3 class="benefits__card-title">Ваша задача - <br>наш фокус</h3>
                 </div>
             </div>
+        </section>
 
-            
+        <section class="devices">
+            <div class="devices__header">
+                <h2 class="devices__title">Наші прилади</h2>
+                <div class="devices__navigation">
+                    <div class="swiper-button-prev devices-nav-btn"></div>
+                    <div class="swiper-button-next devices-nav-btn"></div>
+                </div>
+            </div>
 
-
+            <div class="devices-slider">
+                <div class="swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="devices__card">
+                                <img src="./img/devices-img-01.webp" alt="image" class="devices__card-image">
+                                <div class="devices__card-info">
+                                    <div class="devices__card-content">
+                                        <h3 class="devices__card-title">Orion 2.4 HX</h3>
+                                        <p class="devices__card-text">Нелінійний локатор переходів</p>
+                                    </div>
+                                    <svg width="50" height="70" viewBox="0 0 50 70" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M27.822.001c.207-.047 1.112 1.309 1.247 1.551 1.589 2.862.985 6.207-1.309 8.506L7.431 29.89a11.5 11.5 0 0 0 5.303 4.615l16.902-16.392c9.205-6.867 22.183.588 20.152 11.895-.803 4.464-4.021 7.043-7.12 10.052 2.775 2.633 2.82 7.01.229 9.783L22.137 70c-2.71-2.617-2.733-6.988-.19-9.718l20.608-20.22c-.826-1.402-2.173-2.737-3.543-3.656-.285-.191-1.566-1.006-1.805-.908-4.516 4.41-9.027 8.824-13.552 13.225-3.014 2.931-5.022 5.221-9.618 5.724C2.576 55.7-4.37 42.624 3.11 34.112c.536-.61 4.07-3.797 4.145-4.077.047-.18-.762-1.08-.946-1.376-1.665-2.663-1.389-5.868.613-8.271zm8.788 22.472c-.858.107-1.927.607-2.592 1.137-3.846 3.416-7.329 7.615-11.209 10.951-2.446 2.105-5.468 2.797-8.468 1.262-.388-.198-1.48-1.117-1.573-1.142-.132-.033-.23 0-.324.094-1.75 2.011-4.935 3.932-5.275 6.74-.602 4.965 5.093 7.925 9.04 4.714 3.95-3.212 7.476-7.947 11.437-11.172 2.421-1.97 5.715-2.276 8.428-.67.378.225.9.782 1.135.9.089.044.141.073.226 0 2.619-2.873 6.932-5.121 4.992-9.658-.976-2.286-3.31-3.468-5.817-3.154z" fill="#F0F0F0"/></svg>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="swiper-slide">
+                            <div class="devices__card">
+                                <img src="./img/devices-img-02.webp" alt="image" class="devices__card-image">
+                                <div class="devices__card-info">
+                                    <div class="devices__card-content">
+                                        <h3 class="devices__card-title">Delta X G2/12</h3>
+                                        <p class="devices__card-text">Система пошуку закладних пристроїв</p>
+                                    </div>
+                                    <svg width="50" height="70" viewBox="0 0 50 70" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M27.822.001c.207-.047 1.112 1.309 1.247 1.551 1.589 2.862.985 6.207-1.309 8.506L7.431 29.89a11.5 11.5 0 0 0 5.303 4.615l16.902-16.392c9.205-6.867 22.183.588 20.152 11.895-.803 4.464-4.021 7.043-7.12 10.052 2.775 2.633 2.82 7.01.229 9.783L22.137 70c-2.71-2.617-2.733-6.988-.19-9.718l20.608-20.22c-.826-1.402-2.173-2.737-3.543-3.656-.285-.191-1.566-1.006-1.805-.908-4.516 4.41-9.027 8.824-13.552 13.225-3.014 2.931-5.022 5.221-9.618 5.724C2.576 55.7-4.37 42.624 3.11 34.112c.536-.61 4.07-3.797 4.145-4.077.047-.18-.762-1.08-.946-1.376-1.665-2.663-1.389-5.868.613-8.271zm8.788 22.472c-.858.107-1.927.607-2.592 1.137-3.846 3.416-7.329 7.615-11.209 10.951-2.446 2.105-5.468 2.797-8.468 1.262-.388-.198-1.48-1.117-1.573-1.142-.132-.033-.23 0-.324.094-1.75 2.011-4.935 3.932-5.275 6.74-.602 4.965 5.093 7.925 9.04 4.714 3.95-3.212 7.476-7.947 11.437-11.172 2.421-1.97 5.715-2.276 8.428-.67.378.225.9.782 1.135.9.089.044.141.073.226 0 2.619-2.873 6.932-5.121 4.992-9.658-.976-2.286-3.31-3.468-5.817-3.154z" fill="#F0F0F0"/></svg>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="swiper-slide">
+                            <div class="devices__card">
+                                <img src="./img/devices-img-03.webp" alt="image" class="devices__card-image">
+                                <div class="devices__card-info">
+                                    <div class="devices__card-content">
+                                        <h3 class="devices__card-title">Orion 2.4 HX</h3>
+                                        <p class="devices__card-text">Детектор жучков</p>
+                                    </div>
+                                    <svg width="50" height="70" viewBox="0 0 50 70" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M27.822.001c.207-.047 1.112 1.309 1.247 1.551 1.589 2.862.985 6.207-1.309 8.506L7.431 29.89a11.5 11.5 0 0 0 5.303 4.615l16.902-16.392c9.205-6.867 22.183.588 20.152 11.895-.803 4.464-4.021 7.043-7.12 10.052 2.775 2.633 2.82 7.01.229 9.783L22.137 70c-2.71-2.617-2.733-6.988-.19-9.718l20.608-20.22c-.826-1.402-2.173-2.737-3.543-3.656-.285-.191-1.566-1.006-1.805-.908-4.516 4.41-9.027 8.824-13.552 13.225-3.014 2.931-5.022 5.221-9.618 5.724C2.576 55.7-4.37 42.624 3.11 34.112c.536-.61 4.07-3.797 4.145-4.077.047-.18-.762-1.08-.946-1.376-1.665-2.663-1.389-5.868.613-8.271zm8.788 22.472c-.858.107-1.927.607-2.592 1.137-3.846 3.416-7.329 7.615-11.209 10.951-2.446 2.105-5.468 2.797-8.468 1.262-.388-.198-1.48-1.117-1.573-1.142-.132-.033-.23 0-.324.094-1.75 2.011-4.935 3.932-5.275 6.74-.602 4.965 5.093 7.925 9.04 4.714 3.95-3.212 7.476-7.947 11.437-11.172 2.421-1.97 5.715-2.276 8.428-.67.378.225.9.782 1.135.9.089.044.141.073.226 0 2.619-2.873 6.932-5.121 4.992-9.658-.976-2.286-3.31-3.468-5.817-3.154z" fill="#F0F0F0"/></svg>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="swiper-slide">
+                            <div class="devices__card">
+                                <img src="./img/devices-img-04.webp" alt="image" class="devices__card-image">
+                                <div class="devices__card-info">
+                                    <div class="devices__card-content">
+                                        <h3 class="devices__card-title">WEGA-i</h3>
+                                        <p class="devices__card-text">Детектор прихованих камер</p>
+                                    </div>
+                                    <svg width="50" height="70" viewBox="0 0 50 70" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M27.822.001c.207-.047 1.112 1.309 1.247 1.551 1.589 2.862.985 6.207-1.309 8.506L7.431 29.89a11.5 11.5 0 0 0 5.303 4.615l16.902-16.392c9.205-6.867 22.183.588 20.152 11.895-.803 4.464-4.021 7.043-7.12 10.052 2.775 2.633 2.82 7.01.229 9.783L22.137 70c-2.71-2.617-2.733-6.988-.19-9.718l20.608-20.22c-.826-1.402-2.173-2.737-3.543-3.656-.285-.191-1.566-1.006-1.805-.908-4.516 4.41-9.027 8.824-13.552 13.225-3.014 2.931-5.022 5.221-9.618 5.724C2.576 55.7-4.37 42.624 3.11 34.112c.536-.61 4.07-3.797 4.145-4.077.047-.18-.762-1.08-.946-1.376-1.665-2.663-1.389-5.868.613-8.271zm8.788 22.472c-.858.107-1.927.607-2.592 1.137-3.846 3.416-7.329 7.615-11.209 10.951-2.446 2.105-5.468 2.797-8.468 1.262-.388-.198-1.48-1.117-1.573-1.142-.132-.033-.23 0-.324.094-1.75 2.011-4.935 3.932-5.275 6.74-.602 4.965 5.093 7.925 9.04 4.714 3.95-3.212 7.476-7.947 11.437-11.172 2.421-1.97 5.715-2.276 8.428-.67.378.225.9.782 1.135.9.089.044.141.073.226 0 2.619-2.873 6.932-5.121 4.992-9.658-.976-2.286-3.31-3.468-5.817-3.154z" fill="#F0F0F0"/></svg>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="swiper-slide">
+                            <div class="devices__card">
+                                <img src="./img/devices-img-05.webp" alt="image" class="devices__card-image">
+                                <div class="devices__card-info">
+                                    <div class="devices__card-content">
+                                        <h3 class="devices__card-title">Flir E6 PRO</h3>
+                                        <p class="devices__card-text">Тепловізійна камера </p>
+                                    </div>
+                                    <svg width="50" height="70" viewBox="0 0 50 70" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M27.822.001c.207-.047 1.112 1.309 1.247 1.551 1.589 2.862.985 6.207-1.309 8.506L7.431 29.89a11.5 11.5 0 0 0 5.303 4.615l16.902-16.392c9.205-6.867 22.183.588 20.152 11.895-.803 4.464-4.021 7.043-7.12 10.052 2.775 2.633 2.82 7.01.229 9.783L22.137 70c-2.71-2.617-2.733-6.988-.19-9.718l20.608-20.22c-.826-1.402-2.173-2.737-3.543-3.656-.285-.191-1.566-1.006-1.805-.908-4.516 4.41-9.027 8.824-13.552 13.225-3.014 2.931-5.022 5.221-9.618 5.724C2.576 55.7-4.37 42.624 3.11 34.112c.536-.61 4.07-3.797 4.145-4.077.047-.18-.762-1.08-.946-1.376-1.665-2.663-1.389-5.868.613-8.271zm8.788 22.472c-.858.107-1.927.607-2.592 1.137-3.846 3.416-7.329 7.615-11.209 10.951-2.446 2.105-5.468 2.797-8.468 1.262-.388-.198-1.48-1.117-1.573-1.142-.132-.033-.23 0-.324.094-1.75 2.011-4.935 3.932-5.275 6.74-.602 4.965 5.093 7.925 9.04 4.714 3.95-3.212 7.476-7.947 11.437-11.172 2.421-1.97 5.715-2.276 8.428-.67.378.225.9.782 1.135.9.089.044.141.073.226 0 2.619-2.873 6.932-5.121 4.992-9.658-.976-2.286-3.31-3.468-5.817-3.154z" fill="#F0F0F0"/></svg>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="swiper-slide">
+                            <div class="devices__card">
+                                <img src="./img/devices-img-06.webp" alt="image" class="devices__card-image">
+                                <div class="devices__card-info">
+                                    <div class="devices__card-content">
+                                        <h3 class="devices__card-title">MITC-X750-60D4W</h3>
+                                        <p class="devices__card-text">Промисловий відеоендоскоп</p>
+                                    </div>
+                                    <svg width="50" height="70" viewBox="0 0 50 70" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M27.822.001c.207-.047 1.112 1.309 1.247 1.551 1.589 2.862.985 6.207-1.309 8.506L7.431 29.89a11.5 11.5 0 0 0 5.303 4.615l16.902-16.392c9.205-6.867 22.183.588 20.152 11.895-.803 4.464-4.021 7.043-7.12 10.052 2.775 2.633 2.82 7.01.229 9.783L22.137 70c-2.71-2.617-2.733-6.988-.19-9.718l20.608-20.22c-.826-1.402-2.173-2.737-3.543-3.656-.285-.191-1.566-1.006-1.805-.908-4.516 4.41-9.027 8.824-13.552 13.225-3.014 2.931-5.022 5.221-9.618 5.724C2.576 55.7-4.37 42.624 3.11 34.112c.536-.61 4.07-3.797 4.145-4.077.047-.18-.762-1.08-.946-1.376-1.665-2.663-1.389-5.868.613-8.271zm8.788 22.472c-.858.107-1.927.607-2.592 1.137-3.846 3.416-7.329 7.615-11.209 10.951-2.446 2.105-5.468 2.797-8.468 1.262-.388-.198-1.48-1.117-1.573-1.142-.132-.033-.23 0-.324.094-1.75 2.011-4.935 3.932-5.275 6.74-.602 4.965 5.093 7.925 9.04 4.714 3.95-3.212 7.476-7.947 11.437-11.172 2.421-1.97 5.715-2.276 8.428-.67.378.225.9.782 1.135.9.089.044.141.073.226 0 2.619-2.873 6.932-5.121 4.992-9.658-.976-2.286-3.31-3.468-5.817-3.154z" fill="#F0F0F0"/></svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Пагинация -->
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
         </section>
     </main>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="./js/burger-menu.js"></script>
     <script src="./js/dropdown-menu.js"></script>
     <script src="./js/counter-animation.js"></script>
     <script src="./js/protection-stack.js"></script>
+    <script src="./js/devices-slider.js"></script>
 </body>
 </html>
