@@ -943,7 +943,7 @@ body{
     box-shadow: inset 2px 2.00046px 9px rgba(255, 255, 255, 0.12), inset 1px 1px 4px rgba(255, 255, 255, 0.12);
     backdrop-filter: blur(7.5px);
     border-radius: 24px;
-    width: clamp(327px, 90vw, 1140px);
+    width: clamp(327px, 88vw, 1140px);
     padding: 32px;
     display: flex;
     flex-direction: row;
@@ -1181,10 +1181,7 @@ body{
     .our-mission__btn{
         height: 72px;
     }
-    .tech-security__cards{
-        margin-left: 1px;
-  margin-right: 1px;
-}
+
 
 /* For devices with portrait orientation */
 @media (orientation: portrait) {
