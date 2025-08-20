@@ -1055,8 +1055,10 @@ body{
     z-index: 0;
 }
 
-.benefits__card:hover::before {
-    background: rgba(0, 0, 0, 0.5);
+@media (hover: hover) and (pointer: fine) {
+    .benefits__card:hover::before {
+        background: rgba(0, 0, 0, 0.5);
+    }
 }
 
 .benefits__card-title{
@@ -1181,8 +1183,7 @@ body{
     .our-mission__btn{
         height: 72px;
     }
-
-
+}
 /* For devices with portrait orientation */
 @media (orientation: portrait) {
     .video-background video {
@@ -1200,5 +1201,3 @@ body{
         min-width: 100vw;
     }
 }
-
-
