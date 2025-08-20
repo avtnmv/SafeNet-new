@@ -666,6 +666,12 @@ body{
     color: var(--color-white);
     margin-bottom: 10px;
     line-height: 1;
+    /* Оптимизации для плавной анимации на iOS Safari */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    will-change: contents;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
 }
 
 .our-mission__card-description {

@@ -51,10 +51,10 @@ class CounterAnimation {
     }
 
     animateNumber(element, start, end, isPercentage, duration) {
-        const startTime = Date.now();
+        const startTime = performance.now(); // Более точное время для Safari
+        let lastValue = start;
         
-        const updateCounter = () => {
-            const currentTime = Date.now();
+        const updateCounter = (currentTime) => {
             const elapsed = currentTime - startTime;
             const progress = Math.min(elapsed / duration, 1);
             
@@ -62,17 +62,35 @@ class CounterAnimation {
             const easeOut = 1 - Math.pow(1 - progress, 3);
             const currentValue = Math.floor(start + (end - start) * easeOut);
             
-            element.textContent = isPercentage ? currentValue + '%' : currentValue;
+            // Обновляем только если значение изменилось (оптимизация для Safari)
+            if (currentValue !== lastValue) {
+                element.textContent = isPercentage ? currentValue + '%' : currentValue;
+                lastValue = currentValue;
+                
+                // Принудительный reflow для Safari (исправляет глюки рендеринга)
+                if (this.isSafari()) {
+                    element.style.transform = 'translateZ(0)';
+                }
+            }
             
             if (progress < 1) {
                 requestAnimationFrame(updateCounter);
             } else {
                 // Ensure final value is exact
                 element.textContent = isPercentage ? end + '%' : end;
+                // Убираем transform после завершения анимации
+                if (this.isSafari()) {
+                    element.style.transform = '';
+                }
             }
         };
         
         requestAnimationFrame(updateCounter);
+    }
+    
+    // Определяем Safari для специальных оптимизаций
+    isSafari() {
+        return /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
     }
 }
 
