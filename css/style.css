@@ -1181,7 +1181,9 @@ body{
     .our-mission__btn{
         height: 72px;
     }
-
+    .tech-security__cards{
+        margin-left: 1px;
+  margin-right: 1px;
 }
 
 /* For devices with portrait orientation */
